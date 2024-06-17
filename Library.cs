@@ -78,6 +78,20 @@ namespace ConsoleApp1
                 Console.WriteLine(book.Isbn);
                 Console.WriteLine();
             }
+            Console.WriteLine();
+
+            foreach (Member member in members)
+            {
+                Console.WriteLine(member.Firstname + " -- " + member.LastName + " -- " + member.MemberShipID);
+            }
+
+            Console.WriteLine();
+            foreach (Staff staff in staffs)
+            {
+                Console.WriteLine(staff.Firstname + " -- " + staff.LastName + " -- " + staff.Position);
+            }
+
+
         }
 
     }

@@ -8,12 +8,25 @@ namespace ConsoleApp1
 {
     internal class Staff : Person
     {
-        private string Position;
+        private string position;
         public Staff(string firstName , string lastName, string position)
         {
             this.Firstname = firstName;
             this.LastName = lastName;
             this.Position = position;
+        }
+
+        public string Position
+        {
+            get
+            {
+                return this.position;
+            }
+
+            set
+            {
+               position = value;
+            }
         }
     }
 
