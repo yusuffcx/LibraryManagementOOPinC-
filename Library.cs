@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Library 
+    internal class Library : ILibrary
     {
         private string name;
         private List<Book> books;
@@ -27,7 +27,7 @@ namespace ConsoleApp1
         {
             members.Add(member);
         }
-
+      
         public string Name
         {
             get
@@ -64,7 +64,7 @@ namespace ConsoleApp1
             members = new List<Member>();
             staffs = new List<Staff>();
         }
-
+        
         public void ShowLibraryInfos()
         {
             Console.WriteLine("--------" + name + " bilgileri --------\n");
@@ -90,9 +90,9 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(staff.Firstname + " -- " + staff.LastName + " -- " + staff.Position);
             }
-
+        
 
         }
-
+    
     }
 }
