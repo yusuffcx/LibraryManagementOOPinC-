@@ -7,8 +7,9 @@ class Program
 {
     static void Main()
     {
-        Library library1 = new Library("Emek Kütüphanesi");
 
+        Library library1 = new Library("Emek");
+        ConsoleMenu menu = new ConsoleMenu();
         Member member1 = new Member("Yusuf","Cokal","YC4747");
         Staff staff1 = new Staff("Ahmet", "Demir", "Danışma");
         Book book1 = new Book("Aşk-ı Memnu", "Halit Ziya Uşaklıgil", "457896541");
@@ -44,6 +45,10 @@ class Program
         library1.AddMember(member4);
 
         library1.ShowLibraryInfos();
+
+
+        menu.consoleMenu();
+
     }
 }
 

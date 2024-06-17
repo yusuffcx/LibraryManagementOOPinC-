@@ -67,7 +67,7 @@ namespace ConsoleApp1
         
         public void ShowLibraryInfos()
         {
-            Console.WriteLine("--------" + name + " bilgileri --------\n");
+            Console.WriteLine("--------" + name + " Kütüphanesi bilgileri --------\n");
 
             Console.WriteLine("Kitaplar:\n");
 
